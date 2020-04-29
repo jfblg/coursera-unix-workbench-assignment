@@ -1,5 +1,5 @@
 # COURSERA UNIX WORKBENCH ASSIGNMENT
 
-DATE: 2020-04-29 TIME: 15:06:50
+DATE: 2020-04-29 TIME: 15:44:28
 
-Count of lines in guessinggame.sh: 13 
+Count of lines in guessinggame.sh: 27 
