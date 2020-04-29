@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function count_files_dirs_links_in_current_dir {
-   echo `find . -type f ! -type d ! -type l -maxdepth 1 | wc -l | egrep -o "[0-9]+"`
+   echo `find . -type f -o -type d -o -type l -maxdepth 1 | wc -l | egrep -o "[0-9]+"`
 }
 
 echo "Guess how many files are in the current directory:"
