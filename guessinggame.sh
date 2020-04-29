@@ -23,5 +23,3 @@ done
 
 echo "You guessed it. The current directory contains $count_files files."
 
-# TODO verify if user entered a number
-
