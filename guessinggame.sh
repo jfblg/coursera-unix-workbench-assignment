@@ -1,9 +1,13 @@
 #!/bin/bash
 
+function count_files_dirs_links_in_current_dir {
+   echo `find . -type f ! -type d ! -type l -maxdepth 1 | wc -l | egrep -o "[0-9]+"`
+}
+
 echo "Guess how many files are in the current directory:"
 read user_guess
 
-count_files=`find . -type f -maxdepth 1 | wc -l | egrep -o "[0-9]+"`
+count_files=$(count_files_dirs_links_in_current_dir)
 
 while [[ ! "$user_guess" =~ ^[0-9]+$ ]]; do
     echo "Wrong input. Enter just a number, no characters"
